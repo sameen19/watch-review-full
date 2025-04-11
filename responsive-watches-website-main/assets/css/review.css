@@ -1,0 +1,382 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f8f9fa; /* Light background color */
+    color: #333;
+}
+
+/* Header and Navbar */
+.header {
+    background: #007BFF; /* Navbar background color */
+    color: #fff;
+    padding: 15px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav__logo {
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__logo-icon {
+    font-size: 1.8em;
+}
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav__item {
+    margin: 0 15px;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
+
+.nav__btns {
+    display: flex;
+    align-items: center;
+}
+
+.nav__btns i {
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #fff;
+}
+
+.nav__toggle, .nav__close {
+    display: none; /* For mobile responsiveness */
+}
+
+/* Main Content */
+.main {
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Button Container */
+.nav__btns {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Theme change button */
+.change-theme {
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Hover Effect */
+.nav__btns i:hover {
+    color: #007BFF; /* Matches the navbar theme color */
+}
+
+
+
+/* Search Form Styling */
+#search-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#search-input {
+    flex: 2;
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+}
+
+#search-input:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+#search-button {
+    flex: 1;
+    padding: 10px;
+    background: linear-gradient(135deg, #b9df49, #0056b3);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#search-button:hover {
+    background: linear-gradient(135deg, #e37d2f, #003f7d);
+}
+
+/* Review Form Styling */
+form#review-form {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+form#review-form:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
+}
+
+form#review-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 16px;
+}
+
+form#review-form input[type="text"],
+form#review-form input[type="url"],
+form#review-form input[type="number"],
+form#review-form input[type="email"],
+form#review-form input[type="tel"],
+form#review-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form#review-form input[type="text"]:focus,
+form#review-form input[type="url"]:focus,
+form#review-form input[type="number"]:focus,
+form#review-form input[type="email"]:focus,
+form#review-form input[type="tel"]:focus,
+form#review-form textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+form#review-form button[type="submit"] {
+    width: 100%;
+    padding: 14px 20px;
+    background: linear-gradient(135deg, #b9df49, #0056b3);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+form#review-form button[type="submit"]:hover {
+    background: linear-gradient(135deg, #e37d2f, #003f7d);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    form#review-form {
+        padding: 20px;
+    }
+
+    form#review-form button[type="submit"] {
+        font-size: 16px;
+    }
+}
+
+form#review-form input[type="text"]::placeholder,
+form#review-form input[type="url"]::placeholder,
+form#review-form input[type="number"]::placeholder,
+form#review-form input[type="email"]::placeholder,
+form#review-form input[type="tel"]::placeholder,
+form#review-form textarea::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+/* Contact Cards */
+#contacts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contact-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s;
+}
+
+.contact-card:hover {
+    transform: scale(1.05);
+}
+
+.contact-card__img {
+    width: 100%;
+    height: 200px; /* Fixed height for consistency */
+    overflow: hidden; /* Ensures images don’t overflow */
+}
+
+.contact-card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+    display: block;
+}
+
+.contact-card__info {
+    padding: 15px;
+}
+
+.contact-card__name {
+    font-size: 1.2em;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.contact-card__rating {
+    font-size: 1em;
+    margin: 0 0 10px;
+    color: #555;
+}
+
+.contact-card__text {
+    font-size: 0.9em;
+    margin: 0 0 10px;
+    color: #666;
+}
+
+.contact-card__username,
+.contact-card__useremail,
+.contact-card__phone {
+    font-size: 0.8em;
+    margin: 0;
+    color: #777;
+}
+
+.contact-card__user-info {
+    display: flex;
+    align-items: center;
+}
+
+.contact-card__user-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 8px;
+    object-fit: cover;
+}
+
+.contact-card__username {
+    margin: 0;
+}
+
+/* Footer */
+.footer__container {
+    row-gap: 2rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 3rem;
+  }
+  
+  .footer__title {
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-1-5);
+  }
+  
+  .footer__list, 
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    row-gap: .75rem;
+  }
+  
+  .footer__link {
+    color: var(--text-color);
+  }
+  
+  .footer__link:hover {
+    color: var(--title-color);
+  }
+  
+  .footer__social {
+    display: flex;
+    column-gap: 1rem;
+  }
+  
+  .footer__social-link {
+    font-size: 1.25rem;
+    color: var(--text-color);
+  }
+  
+  .footer__social-link:hover {
+    color: var(--title-color);
+  }
+  
+  .footer__copy {
+    display: block;
+    margin: 3.5rem 0 1rem 0;
+    text-align: center;
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+  }
+  
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav__menu {
+        display: none; /* Hide menu on small screens */
+    }
+
+    .nav__toggle {
+        display: block; /* Show menu toggle button on small screens */
+    }
+
+    .nav__btns {
+        display: none; /* Hide theme button and other buttons on small screens */
+    }
+}

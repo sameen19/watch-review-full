@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/review.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Review Page </title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <i class='bx bxs-watch nav__logo-icon'></i> Rolex
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+            <!-- Theme change button -->
+            <div class="nav__btns">
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+       
+        
+        
+        <section class="order section container" id="order">
+            <h2 class="section__title">REVIEWS</h2>
+            <!-- Search Button -->
+            <form id="search-form">
+                <label for="search-input">Search Watch:</label>
+                <input type="text" id="search-input" name="search" placeholder="Enter watch name" />
+                <button type="submit" id="search-button">Search</button>
+            </form>
+            
+            <div class="order__container grid" id="contacts-container">
+                <!-- Contacts will be loaded here -->
+            </div>
+        </section>
+        <div class="home__social">
+            <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                Facebook
+            </a>
+            <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                Twitter
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                Instagram
+            </a>
+        </div>
+        <form id="review-form">
+            <label for="watchname">Watch Name:</label>
+            <input type="text" id="watchname" name="watchname" required>
+
+            <label for="imgurl">Watch Image URL:</label>
+            <input type="url" id="imgurl" name="imgurl">
+
+            <label for="rating">Rating (out of 5):</label>
+            <input type="number" id="rating" name="rating" min="0" max="5" step="0.1" required>
+
+            <label for="text">Review:</label>
+            <textarea id="text" name="text" rows="4" required></textarea>
+
+            <label for="username">Your Name:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="userimg">Your Image URL:</label>
+            <input type="url" id="userimg" name="userimg">
+
+            <label for="useremail">Email:</label>
+            <input type="email" id="useremail" name="useremail" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit">Submit Review</button>
+        </form>
+    </main>
+
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">Our information</h3>
+
+                <ul class="footer__list">
+                    <li>1234 - Peru</li>
+                    <li>La Libertad 43210</li>
+                    <li>123-456-789</li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">About Us</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Support Center</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Copy Right</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Product</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Road bikes</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Mountain bikes</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Electric</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Accesories</a>
+                    </li>
+                </ul>
+            </div>
+
+            
+        </div>
+
+        <span class="footer__copy">&#169; Bedimcode. All rigths reserved</span>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
