@@ -1,0 +1,2 @@
+CONNECTION_STRING = "mongodb+srv://shailyy1310:4lcuCjfeV8Mgo8E4@shailycluster.rvx1cph.mongodb.net/contacts-backend?retryWrites=true&w=majority&appName=shailyCluster";
+module.exports={CONNECTION_STRING};
